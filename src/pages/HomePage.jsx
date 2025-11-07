@@ -17,13 +17,18 @@ export default function HomePage() {
     filterProducts();
   }, [search, selectedBrand, products]);
 
-  async function fetchProducts() {
-    const res = await apiConnector("GET", PRODUCT_API.GET_ALL_PRODUCTS);
-    if (res?.success) {
-      setProducts(res.data);
-      setFiltered(res.data);
-    }
+ async function fetchProducts() {
+  const res = await apiConnector("GET", PRODUCT_API.GET_ALL_PRODUCTS);
+
+  if (res?.success && Array.isArray(res.data)) {
+    setProducts(res.data);
+    setFiltered(res.data);
+  } else {
+    setProducts([]);
+    setFiltered([]);
   }
+}
+
 
   function filterProducts() {
     let result = [...products];
