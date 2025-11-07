@@ -62,7 +62,7 @@ export default function HomePage() {
 
       {/* HERO BANNER */}
       <div className="w-full h-64 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-center text-white text-4xl font-semibold shadow-lg mb-12 animate-fadeIn">
-        Smartphones on Easy EMI 💳
+        Smartphones on Easy EMI 
       </div>
 
       <div className="max-w-7xl mx-auto p-6">
