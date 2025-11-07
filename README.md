@@ -11,10 +11,10 @@ A simple full-stack web application displaying smartphones with multiple EMI pla
 
 ## 📸 Screenshots
 
-### Homepage
+### DesktopView of Product detail page
 ![DesktopView](desktopView.png)
 
-### Product Detail Page
+### Cellphoneview of Product detail page
 ![CellPhoneview]( mobileView.png)
 
 ---
