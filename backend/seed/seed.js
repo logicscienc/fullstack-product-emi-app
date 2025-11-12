@@ -154,7 +154,7 @@ async function seedDB() {
     console.log(" Connected to database");
 
     await Product.deleteMany({});
-    console.log("🗑 Old product data cleared");
+    console.log(" Old product data cleared");
 
     await Product.insertMany(products);
     console.log(" New product data inserted successfully");
