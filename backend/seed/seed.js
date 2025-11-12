@@ -151,17 +151,17 @@ const products = [
 async function seedDB() {
   try {
     await mongoose.connect(MONGODB_URL);
-    console.log("✅ Connected to database");
+    console.log(" Connected to database");
 
     await Product.deleteMany({});
     console.log("🗑 Old product data cleared");
 
     await Product.insertMany(products);
-    console.log("🌱 New product data inserted successfully");
+    console.log(" New product data inserted successfully");
 
     process.exit();
   } catch (err) {
-    console.error("❌ Error while seeding:", err);
+    console.error(" Error while seeding:", err);
     process.exit(1);
   }
 }
